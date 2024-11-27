@@ -62,7 +62,7 @@ def rentlas_search_tool(query: str, k: int = 5):
 @tool
 def create_booking(booking_info: str) -> str:
     """
-    Create a new booking for a rental property.
+    Create a new booking for a rental property. You must have all input info before exec.
 
     Args:
         booking_info (str): JSON string containing booking information with the following fields:
