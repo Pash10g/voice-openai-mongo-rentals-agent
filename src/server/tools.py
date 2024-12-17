@@ -14,7 +14,7 @@ from pymongo import MongoClient
 load_dotenv()
 # Create a MongoDB client and insert the booking
 
-client = MongoClient(os.environ["MONGODB_ATLAS_URI"])
+client = MongoClient(os.environ["MONGODB_ATLAS_URI"], appname="devrel.showcase.partner.openai")
 
 
 # Initialize OpenAI embeddings with text-embedding-3-small model
